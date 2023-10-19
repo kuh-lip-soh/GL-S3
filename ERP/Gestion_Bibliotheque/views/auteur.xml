@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="auteur_form_view">
+            <field name="name">auteur.form.view</field>
+            <field name="model">auteur</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>                        
+                        <group>                            
+                            <group>                                
+                                <field name="nom" string="Nom"/>                                
+                                <field name="prenom" string="Prénom"/>
+                                <field name="dateNaissance" string="Date de naissance"/>
+                            </group>
+                            <group>
+                                <field name="nationalite" string="Nationalité"/>                            
+                                <field name="sexe" string="Sexe"/>
+                            </group>
+                        </group>
+                    </sheet>                
+                </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="auteur_list_view">
+            <field name="name">auteur.list.view</field>
+            <field name="model">auteur</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nom" string="Nom"/>
+                    <field name="prenom" string="Prénom"/>
+                    <field name="dateNaissance" string="Date de naissance"/>
+                    <field name="nationalite" string="Nationalité"/>
+                    <field name="sexe" string="Sexe"/>
+                </tree>
+            </field>
+        </record>
+        <record model="ir.actions.act_window" id="auteur_actions">
+            <field name="name">Auteur</field>
+            <field name="res_model">auteur</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view type">form</field>
+            <field name="view_id" ref="auteur_list_view"/>
+        </record>
+        <menuitem id="gestion_biblioteque" name="Gestion de bibliothèque"/>
+        <menuitem id="auteur" name="Auteur" parent="gestion_biblioteque" action="auteur_actions"/>
+    </data>
+</odoo>

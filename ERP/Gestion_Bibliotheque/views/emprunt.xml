@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.ui.view" id="emprunt_form_view">
+            <field name="name">emprunt.form.view</field>
+            <field name="model">emprunt</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="date_debut" string="Date d'emprunt"/>
+                                <field name="date_fin" string="Date de fin d'emprunt"/>
+                                <field name="rendu" string="Rendu"/>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+        <record model="ir.ui.view" id="emprunt_list_view">
+            <field name="name">emprunt.list.view</field>
+            <field name="model">emprunt</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="date_debut" />
+                    <field name="date_fin" />
+                    <field name="rendu" />
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="emprunt_actions">
+            <field name="name">Emprunt</field>
+            <field name="res_model">emprunt</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view type">form</field>
+            <field name="view_id" ref="emprunt_list_view" />
+        </record>
+        <menuitem id="emprunt" name="Emprunt" parent="gestion_biblioteque" action="emprunt_actions" />
+
+    </data>
+</odoo>
