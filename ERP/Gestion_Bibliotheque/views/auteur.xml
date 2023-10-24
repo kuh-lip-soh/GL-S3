@@ -1,48 +1,62 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-    <data>
-        <record model="ir.ui.view" id="auteur_form_view">
-            <field name="name">auteur.form.view</field>
-            <field name="model">auteur</field>
-            <field name="arch" type="xml">
-                <form>
-                    <sheet>                        
-                        <group>                            
-                            <group>                                
-                                <field name="nom" string="Nom"/>                                
-                                <field name="prenom" string="Prénom"/>
-                                <field name="dateNaissance" string="Date de naissance"/>
-                            </group>
-                            <group>
-                                <field name="nationalite" string="Nationalité"/>                            
-                                <field name="sexe" string="Sexe"/>
-                            </group>
-                        </group>
-                    </sheet>                
-                </form>
-            </field>
-        </record>
-        <record model="ir.ui.view" id="auteur_list_view">
-            <field name="name">auteur.list.view</field>
-            <field name="model">auteur</field>
-            <field name="arch" type="xml">
-                <tree>
-                    <field name="nom" string="Nom"/>
-                    <field name="prenom" string="Prénom"/>
-                    <field name="dateNaissance" string="Date de naissance"/>
-                    <field name="nationalite" string="Nationalité"/>
-                    <field name="sexe" string="Sexe"/>
-                </tree>
-            </field>
-        </record>
-        <record model="ir.actions.act_window" id="auteur_actions">
-            <field name="name">Auteur</field>
-            <field name="res_model">auteur</field>
-            <field name="view_mode">tree,form</field>
-            <field name="view type">form</field>
-            <field name="view_id" ref="auteur_list_view"/>
-        </record>
-        <menuitem id="gestion_biblioteque" name="Gestion de bibliothèque"/>
-        <menuitem id="auteur" name="Auteur" parent="gestion_biblioteque" action="auteur_actions"/>
-    </data>
+  <data>
+
+    <record model="ir.ui.view" id="auteur_form_view">
+      <field name="name">auteur.form.view</field>
+      <field name="model">auteur</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <group>
+                <field name="nom" />
+                <field name="prenom" />
+                <field name="dateNaissance" />
+              </group>
+              <group>
+                <field name="nationalite" />
+                <field name="sexe" />
+                <field name="livre_ids" widget="many2many_tags" />
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+    <record model="ir.ui.view" id="auteur_list_view">
+      <field name="name">auteur.list.view</field>
+      <field name="model">auteur</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nom" />
+          <field name="prenom" />
+          <field name="dateNaissance" />
+          <field name="nationalite" />
+          <field name="sexe" />
+        </tree>
+      </field>
+    </record>
+    <record id="view_auteur_search" model="ir.ui.view">
+      <field name="name">auteur.search</field>
+      <field name="model">auteur</field>
+      <field name="arch" type="xml">
+        <search string="Auteur">
+          <field name="nom" />
+          <filter string="Auteur tunisiens" name="nationalite" domain="[('nationalite','=','Tunisienne')]" />
+        </search>
+      </field>
+    </record>
+    <record model="ir.actions.act_window" id="auteur_actions">
+      <field name="name">Auteur</field>
+      <field name="res_model">auteur</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_type">form</field>
+      <field name="view_id" ref="auteur_list_view" />
+      <field name="search_view_id" ref="view_auteur_search" />
+      <field name="view_id" ref="auteur_list_view" />
+    </record>
+    <menuitem id="gestion_bib" name="Gestion de bibliothèque" />
+    <menuitem id="auteur" name="Auteur" parent="gestion_bib" action="auteur_actions" />
+  </data>
 </odoo>

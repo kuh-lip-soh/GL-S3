@@ -1,50 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <odoo>
-    <data>
-        <record model="ir.ui.view" id="emprunteur_form_view">
-            <field name="name">emprunteur.form.view</field>
-            <field name="model">emprunteur</field>
-            <field name="arch" type="xml">
-                <form>
-                    <sheet>
-                        <group>
-                            <group>
-                                <field name="nom" string="Nom"/>
-                                <field name="prenom" string="Prénom"/>
-                                <field name="dateNaissance" string="Date de naissance"/>
-                            </group>
-                            <group>
-                                <field name="state" string="État"/>
-                                <field name="sexe" string="Sexe"/>
-                            </group>
-                        </group>
-                    </sheet>   
-                 </form>
-            </field>
-        </record>
-        <record model="ir.ui.view" id="emprunteur_list_view">
-            <field name="name">emprunteur.list.view</field>
-            <field name="model">emprunteur</field>
-            <field name="arch" type="xml">
-                <tree>
-                    <field name="nom" />
-                    <field name="prenom" />
-                    <field name="dateNaissance" />
-                    <field name="state" />
-                    <field name="sexe" />
-                </tree>
-            </field>
-        </record>
-        <record model="ir.actions.act_window" id="emprunteur_actions">
-            <field name="name">Emprunteur</field>
-            <field name="res_model">emprunteur</field>
-            <field name="view_mode">tree,form</field>
-            <field name="view type">form</field>
-            <field name="view_id" ref="emprunteur_list_view" />
-        </record>
-
-        <menuitem id="gestion_biblioteque" name="Gestion de bibliothèque " />
-        <menuitem id="emprunteur" name="Emprunteur" parent="gestion_biblioteque" action="emprunteur_actions" />
-
-    </data>
+  <data>
+    <record model="ir.ui.view" id="emprunteur_form_view">
+      <field name="name">emprunteur.form.view</field>
+      <field name="model">emprunteur</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <group>
+                <field name="nom" />
+                <field name="prenom" />
+                <field name="dateNaissance" />
+              </group>
+              <group>
+                <field name="state" />
+                <field name="sexe" />
+                <group>
+                  <field name="emprunt_ids">
+                    <tree editable="top">
+                      <field name="date_debut" />
+                      <field name="date_fin" />
+                      <field name="rendu" />
+                    </tree>
+                  </field>
+                </group>
+              </group>
+            </group>
+          </sheet>
+        </form>
+      </field>
+    </record>
+    <record model="ir.ui.view" id="emprunteur_list_view">
+      <field name="name">emprunteur.list.view</field>
+      <field name="model">emprunteur</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="nom" />
+          <field name="prenom" />
+          <field name="dateNaissance" />
+          <field name="state" />
+          <field name="sexe" />
+        </tree>
+      </field>
+    </record>
+    <record model="ir.actions.act_window" id="emprunteur_actions">
+      <field name="name">Emprunteur</field>
+      <field name="res_model">emprunteur</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_type">form</field>
+      <field name="view_id" ref="emprunteur_list_view" />
+    </record>
+    <menuitem id="gestion_bib" name="Gestion de bibliothèque" />
+    <menuitem id="emprunteur" name="Emprunteur" parent="gestion_bib" action="emprunteur_actions" />
+  </data>
 </odoo>

@@ -2,10 +2,10 @@
 {
     "name": "Gestion de bibliothèque",
     "version": "1.0",
-    "category": "bibliotheque",
+    "category": "bibliothèque",
     "author": "OUAFI Mohammed Zakaria",
     "depends": ["project"],
-    "description": "ce module est destiné pour gérer des LA bibliotheque",
+    "description": "Ce module est destiné pour gérer des bibliotheques",
     "data": [
         "security/ir.model.access.csv",
         "views/auteur.xml",

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<odoo>
+  <data>
+    <record model="ir.ui.view" id="empruntligne_form_view">
+      <field name="name">empruntligne.form.view</field>
+      <field name="model">empruntligne</field>
+      <field name="arch" type="xml">
+        <form>
+          <sheet>
+            <group>
+              <field name="ligne" />
+              <field name="livres" />
+              <field name="emprunts" />
+            </group>
+
+          </sheet>
+        </form>
+      </field>
+    </record>
+    <record model="ir.ui.view" id="empruntligne_list_view">
+      <field name="name">empruntligne.list.view</field>
+      <field name="model">empruntligne</field>
+      <field name="arch" type="xml">
+        <tree>
+          <field name="ligne" />
+
+        </tree>
+      </field>
+    </record>
+    <record model="ir.actions.act_window" id="empruntligne_actions">
+      <field name="name">Empruntligne</field>
+      <field name="res_model">empruntligne</field>
+      <field name="view_mode">tree,form</field>
+      <field name="view_type">form</field>
+      <field name="view_id" ref="empruntligne_list_view" />
+    </record>
+    <menuitem id="gestion_bib" name="Gestion de bibliothèque" />
+    <menuitem id="empruntligne" name="Empruntligne" parent="gestion_bib"
+      action="empruntligne_actions" />
+  </data>
+</odoo>
