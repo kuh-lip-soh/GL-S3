@@ -1,68 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <odoo>
-  <data>
-    <record model="ir.ui.view" id="livre_form_view">
-      <field name="name">livre.form.view</field>
-      <field name="model">livre</field>
-      <field name="arch" type="xml">
-        <form>
-          <sheet>
-            <group>
-              <group>
-                <field name="titre" />
-                <field name="isbn" />
-                <field name="nbr_pages" />
-              </group>
-              <group>
-                <field name="image_livre" />
-                <field name="langue_livre" />
-                <field name="auteur_ids" widget="many2many_tags" />
-              </group>
-              <group>
-                <field name="emprunts">
-                  <tree editable="top">
-                    <field name="ligne" />
-                  </tree>
-                </field>
-              </group>
-            </group>
-          </sheet>
-        </form>
-      </field>
-    </record>
-    <record model="ir.ui.view" id="livre_list_view">
-      <field name="name">livre.list.view</field>
-      <field name="model">livre</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="titre" />
-          <field name="isbn" />
-          <field name="nbr_pages" />
-          <field name="image_livre" />
-          <field name="langue_livre" />
-        </tree>
-      </field>
-    </record>
-    <record id="view_livre_search" model="ir.ui.view">
-      <field name="name">livre.search</field>
-      <field name="model">livre</field>
-      <field name="arch" type="xml">
-        <search string="Livres">
-          <field name="isbn" />
-        </search>
-      </field>
-    </record>
-    <record model="ir.actions.act_window" id="livre_actions">
-      <field name="name">Livre</field>
-      <field name="res_model">livre</field>
-      <field name="view_mode">tree,form</field>
-      <field name="view_type">form</field>
-      <field name="view_id" ref="livre_list_view" />
-      <field name="search_view_id" ref="view_livre_search" />
-      <field name="view_id" ref="livre_list_view" />
-    </record>
-    <menuitem id="gestion_bib" name="Gestion de bibliothèque" />
-    <menuitem id="livre" name="Livre" parent="gestion_bib" action="livre_actions" />
-  </data>
+    <data>
+        <record model="ir.ui.view" id="livre_form_view">
+            <field name="name">livre.form.view</field>
+            <field name="model">livre</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="titre"/>
+                                <field name="langue"/>
+                                <field name="isbn"/>
+                            </group>
+                            <group>
+                                <field name="nbre_pages"/>
+                                <field name="image_libre"/>
+
+                                <field name="auteurs" widget="many2many_tags" options="{'no_create': True}" />
+                                <field name="emprunt_ligne_ids" >
+                                    <tree editable="top">
+                                        <field name="livre_id" />
+                                        <field name="isbn"/>
+                                        <field name="nbre_pages"/>
+                                        <field name="langue_livre"/>
+                                    </tree>
+                                </field>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="livre_list_view">
+            <field name="name">livre.list.view</field>
+            <field name="model">livre</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="titre"/>
+                    <field name="langue"/>
+                    <field name="isbn"/>
+                    <field name="nbre_pages"/>
+                    <field name="image_libre"/>
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_livre_search" model="ir.ui.view">
+            <field name="name">livre.search</field>
+            <field name="model">livre</field>
+            <field name="arch" type="xml">
+                <search string="Livre Search">
+                    <field name="isbn"/>
+                    
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="livre_actions">
+            <field name="name">Livre</field>
+            <field name="res_model">livre</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view type">form</field>
+            <field name="view_id" ref="livre_list_view"/>
+            <field name="search_view_id" ref="view_livre_search"/>
+        </record>
+
+        <menuitem id="livre" name="Livre" parent="gestion_bibliotheque" action="livre_actions"/>
+    </data>
 </odoo>

@@ -1,75 +1,73 @@
 <?xml version="1.0" encoding="utf-8"?>
-
 <odoo>
-  <data>
-    <record model="ir.ui.view" id="emprunt_form_view">
-      <field name="name">emprunt.form.view</field>
-      <field name="model">emprunt</field>
-      <field name="arch" type="xml">
-        <group expand="0" string="Group By">
-          <filter string="Rendu" name="rendu" domain="" context="{'group_by':'oui'}" />
-          <filter string="Non Rendu" name="rendu" domain="" context="{'group_by':'non'}" />
-        </group>
-        <form>
-          <sheet>
-            <group>
-              <group>
-                <field name="date_debut" />
-                <field name="date_fin" />
-              </group>
-              <group>
-                <field name="rendu" />
-                <field name="emprunteur_id" />
-              </group>
-              <group>
-                <field name="empruntlgn">
-                  <tree editable="top">
-                    <field name="ligne" />
-                    <field name="livres" />
-                  </tree>
-                </field>
-              </group>
-            </group>
-          </sheet>
-        </form>
-      </field>
-    </record>
-    <record model="ir.ui.view" id="emprunt_list_view">
-      <field name="name">emprunt.list.view</field>
-      <field name="model">emprunt</field>
-      <field name="arch" type="xml">
-        <tree>
-          <field name="date_debut" />
-          <field name="date_fin" />
-          <field name="rendu" />
-        </tree>
-      </field>
-    </record>
-    <record id="view_emprunt_search" model="ir.ui.view">
-      <field name="name">emprunt.search</field>
-      <field name="model">emprunt</field>
-      <field name="arch" type="xml">
-        <search string="emprunt">
-          <field name="rendu" />
-          <field name="emprunteur_id" string="Emprunteur" />
-          <field name="empruntlgn" />
-          <filter string="Rendu" name="rendu" domain="[('rendu','=','oui')]" />
-          <group expand="0" string="Group By">
-            <filter string="Rendu" name="rendu" domain="" context="{'group_by':'rendu'}" />
-          </group>
-        </search>
-      </field>
-    </record>
-    <record model="ir.actions.act_window" id="emprunt_actions">
-      <field name="name">Emprunt</field>
-      <field name="res_model">emprunt</field>
-      <field name="view_mode">tree,form</field>
-      <field name="view_type">form</field>
-      <field name="view_id" ref="emprunt_list_view" />
-      <field name="search_view_id" ref="view_emprunt_search" />
-      <field name="view_id" ref="emprunt_list_view" />
-    </record>
-    <menuitem id="gestion_bib" name="Gestion de bibliothèque" />
-    <menuitem id="emprunt" name="Emprunt" parent="gestion_bib" action="emprunt_actions" />
-  </data>
+    <data>
+        <record model="ir.ui.view" id="emprunt_form_view">
+            <field name="name">emprunt.form.view</field>
+            <field name="model">emprunt</field>
+            <field name="arch" type="xml">
+                <form>
+                    <sheet>
+                        <group>
+                            <group>
+                                <field name="date_debut"/>
+                                <field name="date_fin"/>
+                                <field name="rendu"/>
+                                <field name="emprunteur_id" options="{'no_create': True}" />
+                                <field name="emprunt_ligne_ids">
+                                    <tree editable='top'>
+                                        <field name="livre_id" />
+                                        <field name="isbn"/>
+                                        <field name="nbre_pages"/>
+                                        <field name="langue_livre"/>
+            
+                                        
+                                    </tree>
+            
+                                </field>
+                            </group>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="emprunt_list_view">
+            <field name="name">emprunt.list.view</field>
+            <field name="model">emprunt</field>
+            <field name="arch" type="xml">
+            
+                <tree>
+                    <field name="date_debut"/>
+                    <field name="date_fin"/>
+                    <field name="rendu"/>
+
+                   
+                    
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="view_emprunt_search" model="ir.ui.view">
+            <field name="name">emprunt.search</field>
+            <field name="model">emprunt</field>
+            <field name="arch" type="xml">
+                <search string="Emprunt Search">
+                    <field name="emprunteur_id"/>
+                    
+                </search>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="emprunt_actions">
+            <field name="name">Emprunt</field>
+            <field name="res_model">emprunt</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view type">form</field>
+            <field name="view_id" ref="emprunt_list_view"/>
+            <field name="search_view_id" ref="view_emprunt_search"/>
+        </record>
+
+        <menuitem id="emprunt" name="Emprunt" parent="gestion_bibliotheque" action="emprunt_actions"/>
+    </data>
 </odoo>

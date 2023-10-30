@@ -1,10 +1,15 @@
-from odoo import models, fields
+# -*- coding: utf-8 -*-
+from odoo import models, fields, api
 
 class Auteur(models.Model):
     _name = 'auteur'
-    nom = fields.Char(string="Nom",required=True)
-    prenom = fields.Char(string="Prénom",required=True)
-    dateNaissance = fields.Date(string="dateNaissance")
-    nationalite = fields.Char(string="nationalite", default="algerienne")
-    sexe = fields.Selection([("homme", "Homme"), ("femme", "Femmme")])
-    livre_ids = fields.Many2many('livre',String='Livre')
+    _rec_name = 'nom'
+    livres = fields.Many2many('livre', string='Livre Ecrit')
+    nom = fields.Char(string="Nom")
+    prenom = fields.Char(string="Prenom")
+    date_naissance = fields.Date(string="Date de naissance")
+    nationalite = fields.Char(string="Nationalite", default="Algerienne")
+    sexe = fields.Selection([
+        ('homme','Homme'),
+        ('femme','Femme')
+        ])
