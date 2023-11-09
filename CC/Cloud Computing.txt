@@ -1,0 +1,52 @@
+Cloud Computing
+
+
+-------------TP0------------
+
+1) OpenStack est un ensemble de logiciels open source permettant de déployer des infrastructures de cloud computing
+
+	a) C'est une plateforme de CC
+	
+	b) On peux faire de l'hebergement en ligne tout comme de la vidéo a la demande (youtube) mais aussi des environnements de developement et de tests
+	
+2) Oui, c'est le principe d'un logiciel opensource, l'utilisation personelle (dans notre cas les études) est autorisé et commerciale suivant les conditions de la dite license
+
+	a) La license Apache 2.0
+	
+	b) Oui
+		1) oui
+	
+	c) totalement
+		1) effectivement
+		
+3) Personnelement oui, et generalement les pc manquent plutot de ram que d'autres pré-requis
+
+	a) la dernière version requiere Ubuntu 16.04 LTS ou autres distributions equivalentes, 4c @2.4GHz 64bits, 8gb de ram, un Hyperviseur actif et bien sur du stockage suffisant (20gb)
+	
+	b) Ryzen 7 6800h 8c16t - 32gb de ram - et bien evidement tout le reste est disponible en terme de réseau, d'hyperviseur sauf l'os
+	
+	c) non
+	
+	d) les pc des salles informatiques ont la configuration suivante : 2c 2gb ram et 32bits, donc certainement pas
+
+4) oui (2)
+
+
+
+1) C'est très juste en terme de configuration meme pour celle 
+
+
+
+------------TP1--------------
+
+su root
+sudo adduser $USER vboxsf
+
+sudo apt update && sudo apt upgrade -y
+
+9) 	Démarrage normal = Comme si on demarrait un pc normalement et on arrive au bureau sans programmes ouverts
+	Démarrage à partir du dernier état = on se continue exactement là ou on était avec tout les programmes ouverts, les données en ram etc
+
+12) Il servirait d'hyperviseur, puisque VirtualBox est un hyperviseur
+
+13) Outil de virtualisation
