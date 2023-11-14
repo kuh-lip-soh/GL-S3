@@ -27,18 +27,26 @@ public class LendemainTestStream {
 	
 	static Stream<int[]> Parametres() {
         return Stream.of(
-                new int[]{1, 29, 30, 28, 30},
-                new int[]{5, 2, 11, 8, 4},
-                new int[]{1580, 1800, 2100, 1996, 3000}
+        		new int[] {32, 10 ,2000},
+        		new int[] {10, 50, 2000},
+        		new int[] {10, 10, 3500},
+        		new int[] {-5, 10, 2000},
+        		new int[] {10, -2, 2000},
+        		new int[] {10, 10, 1000},
+        		new int[] {31, 12, 2000},
+        		new int[] {31, 1, 2000},
+        		new int[] {30, 4, 2000},
+        		new int[] {28, 2, 2000},
+        		new int[] {28, 2, 2001}
         );
     }
 	
     @ParameterizedTest
     @MethodSource("Parametres")
-	public void CalculerTest() {
+	public void CalculerTest(int p[]) {
 		try {
-			lendemain.Calculer(j,m,a);
-		fail("Une exception doit être levée si une donnée est invalide");
+			int[] result = lendemain.Calculer(p[0], p[1], p[2]);
+			fail("Une exception doit être levée si une donnée est invalide");
 		}
 		catch (IllegalArgumentException aExp){
 			assert (aExp.getMessage().contains("Jour"));

@@ -5,14 +5,14 @@ public class Lendemain {
 		
 		if(j>31)
 			throw new IllegalArgumentException("Jour supérieur a 31");
-		if(j<1)
-			throw new IllegalArgumentException("Jour nul ou négatif");
 		if(m>12)
 			throw new IllegalArgumentException("Mois supérieur a 12");
-		if(m<1)
-			throw new IllegalArgumentException("Mois nul ou négatif");
 		if(a>3000)
 			throw new IllegalArgumentException("Année supérieur a 3000");
+		if(j<1)
+			throw new IllegalArgumentException("Jour nul ou négatif");
+		if(m<1)
+			throw new IllegalArgumentException("Mois nul ou négatif");
 		if(a<1582)
 			throw new IllegalArgumentException("Année inférieur a 1582");
 		
@@ -48,8 +48,6 @@ public class Lendemain {
 				L[0]=1;
 				L[1]++;
 			}
-		
-
 		
 		return L;
 	}
