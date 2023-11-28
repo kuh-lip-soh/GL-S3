@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Gestion" version="4">
+  <OBJECT>
+    <ID name="Gestion" mc="Standard.Package" uid="80949511-95e8-44fe-a81d-f0c175ab3c2c"/>
+    <PID name="SPAICN" mc="Standard.Package" uid="30184baa-1059-4c1d-a341-44a9947394cd"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Gestion]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Créer une regle" mc="Standard.UseCase" uid="492f32eb-18d9-4ad6-9098-1978a685626a"/>
+        <COMPID name="Modifier une regle" mc="Standard.UseCase" uid="0f19990b-5d37-4a4c-8df3-a7506fa58448"/>
+        <COMPID name="Supprimer une regle" mc="Standard.UseCase" uid="82417b9c-e670-4ee6-926b-c4319c7ec083"/>
+        <COMPID name="Visiter un site" mc="Standard.UseCase" uid="6a532ddf-2add-4124-9364-996c15177608"/>
+        <COMPID name="Verifier la conformité" mc="Standard.UseCase" uid="804204f6-a326-4733-b5d7-5824da98caf8"/>
+        <COMPID name="Approuver" mc="Standard.UseCase" uid="091c92f3-9a38-4057-83de-fa7b2ad98bba"/>
+        <COMPID name="Blâmer" mc="Standard.UseCase" uid="5c5d42c1-f7f8-494e-9e55-e232f2531639"/>
+        <COMPID name="Mettre a jour le code du batiment" mc="Standard.UseCase" uid="630455e2-c68b-48ad-a169-50827f3bb634"/>
+        <COMPID name="Controleur" mc="Standard.Actor" uid="cfe8155d-8de6-4dfc-8f54-f9371f289eef"/>
+        <COMPID name="Autorité" mc="Standard.Actor" uid="5af834fe-4889-47d4-88b7-aa38c359ad25"/>
+        <COMPID name="Ministère de l'urbanisme" mc="Standard.Actor" uid="641fa193-4917-458a-907a-af90a7107658"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

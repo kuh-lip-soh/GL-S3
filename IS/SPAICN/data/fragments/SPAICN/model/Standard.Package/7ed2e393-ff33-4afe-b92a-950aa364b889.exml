@@ -1,0 +1,39 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Classe" version="4">
+  <OBJECT>
+    <ID name="Classe" mc="Standard.Package" uid="7ed2e393-ff33-4afe-b92a-950aa364b889"/>
+    <PID name="SPAICN" mc="Standard.Package" uid="30184baa-1059-4c1d-a341-44a9947394cd"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Classe]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="SPAICN" mc="Standard.Class" uid="198d0b4f-842b-4301-8542-4050c3d767cd"/>
+        <COMPID name="Institut de recherche" mc="Standard.Class" uid="338ee35b-fce5-4188-9184-c8291aec2684"/>
+        <COMPID name="Station de captation" mc="Standard.Class" uid="a2f589ea-7b9c-4c77-8cc8-2017b882e56e"/>
+        <COMPID name="Autorités" mc="Standard.Class" uid="6dc249ff-bcdd-400a-93d1-39f4549a5577"/>
+        <COMPID name="Secours" mc="Standard.Class" uid="d39721cb-8423-42fd-87b8-e5de327a047b"/>
+        <COMPID name="Personnel" mc="Standard.Class" uid="fef27de8-62dc-43ce-8f97-57f2f0b7536a"/>
+        <COMPID name="Chercheur" mc="Standard.Class" uid="ed94da98-3b7b-4c6f-bbf4-14c6514a4fa3"/>
+        <COMPID name="Responsable" mc="Standard.Class" uid="83979f61-164c-4a80-9ea3-1c297a4b96e8"/>
+        <COMPID name="Population" mc="Standard.Class" uid="115a0f8f-47cc-409e-9965-052d103cfb6e"/>
+        <COMPID name="Capteurs" mc="Standard.Class" uid="176ef38f-b4ab-4f94-a6d6-3e3f4d78281a"/>
+        <COMPID name="Anémomètre" mc="Standard.Class" uid="c067eb77-234a-4ee7-a152-68973a307f6c"/>
+        <COMPID name="Baromètre" mc="Standard.Class" uid="0575f709-0fc6-41e9-98a5-4c5fd828e5e5"/>
+        <COMPID name="Pluviomètre" mc="Standard.Class" uid="d82c554a-2bae-4fc0-9ee7-7a3e3d6d5bc4"/>
+        <COMPID name="Sismomètre" mc="Standard.Class" uid="ae91d659-697f-4842-89eb-d92973e84132"/>
+        <COMPID name="Caméra thermique" mc="Standard.Class" uid="5cc9c4a3-c5fd-4ef4-b3a0-9646f0fac6cf"/>
+        <COMPID name="Controleur" mc="Standard.Class" uid="8d521611-9fa0-458b-9b43-c377346d0e75"/>
+        <COMPID name="Pompiers" mc="Standard.Class" uid="4463203f-8318-4875-8c4f-fea4abcbe8a8"/>
+        <COMPID name="Sirène d'alerte" mc="Standard.Class" uid="faafb739-cb0d-40dc-baec-18f1e8ef8866"/>
+        <COMPID name="Antenne de communications d'urgence" mc="Standard.Class" uid="812fa767-75b2-45cd-9634-2b46adefaf5f"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

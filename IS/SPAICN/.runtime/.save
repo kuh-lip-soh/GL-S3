@@ -1,0 +1,8 @@
+#Tue Nov 28 23:28:11 GMT+01:00 2023
+org.modelio.app.diagram.editor.OpenedDiagrams0='Recherche et d\u00E9veloppement' {3bf9d99b-fb15-4fd9-a79e-30487f3738fa} Standard.UseCaseDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams3='D\u00E9tection des ph\u00E9nom\u00E8nes' {c90c1b82-111f-4aae-91c1-68d294cd152e} Standard.UseCaseDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams4='D\u00E9tection d'un ph\u00E9nom\u00E8ne' {75c7f308-b869-40a4-b38a-119f81d10f91} Standard.SequenceDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams1='R\u00E9gles du b\u00E2timent' {55ae8d75-d9e9-44a3-ba5e-246b7c7bb110} Standard.UseCaseDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams2='Tests d'urgence' {013ea1e7-aa28-49f2-80b4-633592ac2cd6} Standard.UseCaseDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams5='Diagramme de s\u00E9quence Interaction' {4b51a81c-94e1-4415-915d-cf4c1b4dc832} Standard.SequenceDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams6='Diagramme de classe SPAICN' {f4b47d78-d30a-4824-94ab-736e7e2f04b6} Standard.ClassDiagram

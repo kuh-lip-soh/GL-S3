@@ -1,0 +1,31 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="Détéction" version="4">
+  <OBJECT>
+    <ID name="Détéction" mc="Standard.Package" uid="c78ff22e-e747-495f-96c0-c1cbe15dc57b"/>
+    <PID name="SPAICN" mc="Standard.Package" uid="30184baa-1059-4c1d-a341-44a9947394cd"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[Détéction]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Détecter des phénomènes" mc="Standard.UseCase" uid="b9c7b8f0-8429-42b6-a490-17b655a74440"/>
+        <COMPID name="Capteurs" mc="Standard.UseCase" uid="a6652dc2-3903-48cf-a2bb-24e53ad25b19"/>
+        <COMPID name="Capteur de la vitesse du vent(Anémomètre)" mc="Standard.UseCase" uid="c86140e2-391a-479d-a677-83d35df75253"/>
+        <COMPID name="Capteur de la pression atmosphérique (Baromètre)" mc="Standard.UseCase" uid="06e2091c-1029-4ede-84c5-0f692f55e270"/>
+        <COMPID name="Capteur d'activités sismiques (Sismomètre)" mc="Standard.UseCase" uid="a0b38e6b-8d96-4bac-bf9e-298df8bcb213"/>
+        <COMPID name="Capteur de chaleur (Caméra thermique)" mc="Standard.UseCase" uid="da116bef-a3c3-4f8c-b8ca-91f3e1aca9c6"/>
+        <COMPID name="Capteur des précipitations (Pluviomètre)" mc="Standard.UseCase" uid="df124d21-a3dd-4d96-aaf4-10d95710e9b7"/>
+        <COMPID name="Suivre des phénomènes" mc="Standard.UseCase" uid="8dbf73ee-69e9-4c2b-9409-14abbe68adb7"/>
+        <COMPID name="Partager les données recoltées" mc="Standard.UseCase" uid="c63a013f-c4dd-476b-8a6d-bcb80cf57b28"/>
+        <COMPID name="Station" mc="Standard.Actor" uid="474e93c3-bcb2-41fc-a852-3ff9a4e05121"/>
+        <COMPID name="Responsable" mc="Standard.Actor" uid="c2d8c878-26c3-4c04-b6a4-acaef30ac7d8"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SPAICN" version="4">
+  <OBJECT>
+    <ID name="SPAICN" mc="Standard.Package" uid="30184baa-1059-4c1d-a341-44a9947394cd"/>
+    <PID name="SPAICN" mc="Standard.Project" uid="5a5f6a8c-5454-4eb0-afd0-e256544fa90e"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[SPAICN]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Détection d'un phénomène" mc="Standard.Interaction" uid="c1968650-0b08-492a-9a1c-e31156814727"/>
+        <COMPID name="Affrontement d'un phénomène" mc="Standard.Interaction" uid="0625e4fe-1300-40ef-8a24-ede62eef41c1"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="R&amp;D" mc="Standard.Package" uid="54c72255-e048-4a25-ab80-00fbb5432aa3"/>
+        <COMPID name="Détéction" mc="Standard.Package" uid="c78ff22e-e747-495f-96c0-c1cbe15dc57b"/>
+        <COMPID name="Gestion" mc="Standard.Package" uid="80949511-95e8-44fe-a81d-f0c175ab3c2c"/>
+        <COMPID name="Planification" mc="Standard.Package" uid="67bdbdea-0628-4506-b802-f7246b0ed763"/>
+        <COMPID name="Serveur" mc="Standard.Actor" uid="cb5876ef-be12-421f-b291-63c528e58890"/>
+        <COMPID name="Classe" mc="Standard.Package" uid="7ed2e393-ff33-4afe-b92a-950aa364b889"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Recherche et développement" mc="Standard.UseCaseDiagram" uid="3bf9d99b-fb15-4fd9-a79e-30487f3738fa"/>
+        <COMPID name="Régles du bâtiment" mc="Standard.UseCaseDiagram" uid="55ae8d75-d9e9-44a3-ba5e-246b7c7bb110"/>
+        <COMPID name="Tests d'urgence" mc="Standard.UseCaseDiagram" uid="013ea1e7-aa28-49f2-80b4-633592ac2cd6"/>
+        <COMPID name="Détection des phénomènes" mc="Standard.UseCaseDiagram" uid="c90c1b82-111f-4aae-91c1-68d294cd152e"/>
+        <COMPID name="Diagramme de classe SPAICN" mc="Standard.ClassDiagram" uid="f4b47d78-d30a-4824-94ab-736e7e2f04b6"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

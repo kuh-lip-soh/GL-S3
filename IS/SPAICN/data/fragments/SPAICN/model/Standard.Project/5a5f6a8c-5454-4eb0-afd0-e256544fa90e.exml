@@ -1,0 +1,20 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="SPAICN" version="4">
+  <OBJECT>
+    <ID name="SPAICN" mc="Standard.Project" uid="5a5f6a8c-5454-4eb0-afd0-e256544fa90e"/>
+    <ATTRIBUTES>
+      <ATT name="ProjectContext"></ATT>
+      <ATT name="ProjectDescr"></ATT>
+      <ATT name="Name"><![CDATA[SPAICN]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="Model">
+        <COMPID name="SPAICN" mc="Standard.Package" uid="30184baa-1059-4c1d-a341-44a9947394cd"/>
+      </COMP>
+      <COMP relation="DiagramRoot">
+        <COMPID name="SPAICN" mc="Infrastructure.DiagramSet" uid="8d39a2db-20ee-4a67-942f-bcf7ffdc0ed3"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
