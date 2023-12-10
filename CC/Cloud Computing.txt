@@ -50,3 +50,31 @@ sudo apt update && sudo apt upgrade -y
 12) Il servirait d'hyperviseur, puisque VirtualBox est un hyperviseur
 
 13) Outil de virtualisation
+
+
+
+------------TP2--------------
+
+8)	b- A chaque fois qu'on restaure une snapshot, on perds les fenetres et fichiers qui étaient ouvertes et crées.
+
+	c- Donc une Snapshot est une sauvegarde des données modifiées et prrogrammes ouverts
+
+
+10)	a- no u
+
+	b- Si l'export est a partir de la 2eme snapshot, oui sinon non
+
+	c- Oui (il était deja installé bien avant)
+
+	d- yes
+
+	e- L'export concerne uniquement la snapshot restaurée actuellement
+
+	f- Restaurer la dernière snapshot avant d'exporter
+
+
+1) Une Snapshot est une sauvegarde incrémentale qui enregistre uniquement les données modifiée par rapport a la dernière snapshot (meme chose pour les instances des programmes)
+
+2)	a- 1) 
+	   2)
+	b-
