@@ -1,21 +1,34 @@
-# -*- coding: utf-8 -*-
 from odoo import models, fields, api
 
-class Emprunteur(models.Model):
-    _name = 'emprunteur'
-    _rec_name='nom'
-    nom = fields.Char(string="Nom")
-    prenom = fields.Char(string="Prenom")
-    date_naissance = fields.Date(string="Date de naissance")
-    state = fields.Char(string="State")
-    sexe = fields.Selection([
-        ('homme','Homme'),
-        ('femme','Femme')
-        ])
-    nbr_emprunt = fields.Integer(string="Nbr Emprunts", compute="calculerEmprunts")
-    emprunt_ids = fields.One2many("emprunt", "emprunteur_id", string="Emprunts")
 
-    @api.depends('emprunt_ids')
-    def calculerEmprunts(self): 
+class Emprunteur(models.Model):
+    _name = "emprunteur"
+    _rec_name = "nom"
+    nom = fields.Char(String="Nom", required=True)
+    prenom = fields.Char(String="Prenom", required=True)
+    date_naissance = fields.Date(String="Date Naissance")
+    state = fields.Char(String="State")
+
+    sexe = fields.Selection([("homme", "Homme"), ("femme", "Femme")])
+    emprunts = fields.One2many("emprunt", "emprunteur", string="Emprunts")
+    nbrs_emprunts = fields.Integer(
+        String="nbrs_emprunts", compute="_compute_nbrs_emprunts"
+    )
+
+    @api.depends("emprunts")
+    def _compute_nbrs_emprunts(self):
         for record in self:
-            record.nbr_emprunt = len(record.emprunt_ids)
+            if record.emprunts:
+                record.nbrs_emprunts = len(record.emprunts)
+
+    # nbr_emprunts = fields.Integer(String="nbr_emprunts", compute="_compute_emprunts")
+
+    # @api.depends("emprunts")
+    # def _compute_emprunts(self):
+    #     self.nbr_emprunts = 10
+
+    #     # if self.emprunts:
+    #     #     self.nbre_emprunt = 5
+    #     # else:
+
+    # nbre_emprunt = fields.Integer(String="nbre_emprunt", compute="compute_emprunts")

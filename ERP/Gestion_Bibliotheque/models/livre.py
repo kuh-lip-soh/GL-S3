@@ -1,17 +1,15 @@
-# -*- coding: utf-8 -*-
-from odoo import models, fields, api
+from odoo import models, fields
+
 
 class Livre(models.Model):
-    _name = 'livre'
-    _rec_name = 'titre'
-    auteurs = fields.Many2many('auteur', string='Authors')
-    emprunt_ligne_ids = fields.One2many('emprunt_ligne', "livre_id", string="Emprunt Lignes")
-    titre = fields.Char(string="Titre")
-    langue = fields.Selection([
-        ('francais','Français'),
-        ('arabe','Arabe'),
-        ('anglais','Anglais')
-        ])
-    isbn = fields.Char(string="ISBN")
-    nbre_pages = fields.Integer(string="Nombre des pages")
-    image_libre = fields.Binary(string="Image libre")
+    _name = "livre"
+    _rec_name = "titre"
+    titre = fields.Char(String="Titre", required=True)
+    isbn = fields.Char(String="isbn", required=True)
+    nbre_pages = fields.Float(String="nbre_pages")
+    image_livre = fields.Binary(String="image")
+    langue_livre = fields.Selection(
+        [("français", "FR"), ("Arabe", "ARB"), ("Anglais", "ENG")]
+    )
+    auteurs = fields.Many2many("auteur", string="Auteurs")
+    emprunt_lignes = fields.One2many("empruntligne", "livres", string="emprunt_ligne")

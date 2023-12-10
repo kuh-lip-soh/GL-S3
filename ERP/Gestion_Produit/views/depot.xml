@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="view_depot_form">
+            <field name="name">depot.from.view</field>
+            <field name="model">depot</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <group>
+                            <field name="nom" />
+                            <field name="adresse" />
+                            <field name="quantite_produit" />
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_depot_tree">
+            <field name="name">depot.tree.view</field>
+            <field name="model">depot</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nom" />
+                    <field name="adresse" />
+                    <field name="quantite_produit" />
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_depot">
+            <field name="name">Dépôts</field>
+            <field name="res_model">depot</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="Gestion_Produit.view_depot_tree" />
+        </record>
+
+        <menuitem id="Gestion_Produit" name="Gestion de Produit" />
+        <menuitem id="menu_depot" name="Dépôts" parent="gestion.produit"
+            action="action_depot" />
+    </data>
+</odoo>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+        <record model="ir.module.category" id="category_bibliotheque">
+            <field name="name">gestion de bibliotheque</field>
+            <field name="sequence">0</field>
+            <field name="visible" eval="0" />
+        </record>
+        <record id="group_secretaire" model="res.groups">
+            <field name="name">Groupe secretaire</field>
+            <field name="category_id" ref="category_bibliotheque" />
+        </record>
+        <record id="group_admin" model="res.groups">
+            <field name="name">Groupe Admin</field>
+            <field name="category_id" ref="category_bibliotheque" />
+        </record>
+        <record id="group_directeur" model="res.groups">
+            <field name="name">Groupe Directeur</field>
+            <field name="category_id" ref="category_bibliotheque" />
+        </record>
+    </data>
+</odoo>

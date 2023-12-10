@@ -14,9 +14,9 @@
                             </group>
 
                             <group>
-                                <field name="isbn"/>
-                                <field name="nbre_pages"/>
-                                <field name="langue_livre"/>
+                                <field name="isbn" />
+                                <field name="nbre_pages" />
+                                <field name="langue_livre" />
                             </group>
                         </group>
                     </sheet>
@@ -28,11 +28,11 @@
             <field name="name">emprunt_ligne.list.view</field>
             <field name="model">emprunt_ligne</field>
             <field name="arch" type="xml">
-            
+
                 <tree>
-                    <field name="isbn"/>
-                    <field name="nbre_pages"/>
-                    <field name="langue_livre"/>
+                    <field name="isbn" />
+                    <field name="nbre_pages" />
+                    <field name="langue_livre" />
                 </tree>
             </field>
         </record>
@@ -42,9 +42,10 @@
             <field name="res_model">emprunt_ligne</field>
             <field name="view_mode">tree,form</field>
             <field name="view type">form</field>
-            <field name="view_id" ref="emprunt_ligne_list_view"/>
+            <field name="view_id" ref="emprunt_ligne_list_view" />
         </record>
 
-        <menuitem id="emprunt_ligne" name="Emprunt Ligne" parent="gestion_bibliotheque" action="emprunt_ligne_actions"/>
+        <menuitem id="gestion_bibliotheque" name="Gestion de bibliotheque" />
+        
     </data>
 </odoo>

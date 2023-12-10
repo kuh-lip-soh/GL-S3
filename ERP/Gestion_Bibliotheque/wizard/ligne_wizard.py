@@ -1,16 +1,16 @@
 from odoo import models, fields, api
 
 
-class EmpruntLigne(models.Model):
-    _name = "empruntligne"
-    _rec_name = "livres"
+class LigneWizard(models.TransientModel):
+    _name = "ligne_wizard"
+
     isbn = fields.Char(String="isbn", required=True)
     nbre_pages = fields.Float(String="nbre_pages")
     langue_livre = fields.Selection(
         [("français", "FR"), ("Arabe", "ARB"), ("Anglais", "ENG")]
     )
     livres = fields.Many2one("livre", string="Livre")
-    emprunts = fields.Many2one("emprunt", string="Emprunt")
+    emprunts = fields.Many2one("emprunt.wizard", string="Emprunt")
 
     # @api.onchange("livre_ids")
     # def calculer_age(self):

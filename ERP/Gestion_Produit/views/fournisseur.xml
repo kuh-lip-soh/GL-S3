@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="view_fournisseur_form">
+            <field name="name">fournisseur.from.view</field>
+            <field name="model">fournisseur</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <group>
+                            <field name="nom" />
+                            <field name="prenom" />
+                            <field name="prix_total" />
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_fournisseur_tree">
+            <field name="name">fournisseur.tree.view</field>
+            <field name="model">fournisseur</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nom" />
+                    <field name="prenom" />
+                    <field name="prix_total" />
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_fournisseur">
+            <field name="name">Fournisseurs</field>
+            <field name="res_model">fournisseur</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="Gestion_Produit.view_fournisseur_tree" />
+        </record>
+
+        <menuitem id="Gestion_Produit" name="Gestion de produit" />
+        <menuitem id="menu_fournisseur" name="Fournisseurs" parent="gestion.produit"
+            action="action_fournisseur" />
+    </data>
+</odoo>

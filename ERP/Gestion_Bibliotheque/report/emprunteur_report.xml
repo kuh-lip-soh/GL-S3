@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+  <data>
+    <template id="report_emprunteur">
+      <t t-call="web.html_container">
+        <t t-foreach="docs" t-as="doc">
+          <t t-call="web.external_layout">
+            <div class="page">
+              <h1 class="title">Carte d'emprunteur</h1>
+
+              <div class="report"
+                style="background-color: #fff;border-radius: 8px;box-shadow: 0 0 10px rgba(0, 0, 0, 0.1)">
+                <div class="field" style="display:flex;margin-bottom:16px;">
+                  <div class="label" style="flex:1;font-weight: bold;">Nom:</div>
+                  <div class="value" style="flex:2;">
+                    <t t-esc="doc.nom" />
+                  </div>
+                </div>
+
+                <div class="field" style="display:flex;margin-bottom:16px;">
+                  <div class="label" style="flex:1;font-weight: bold;">Prenom:</div>
+                  <div class="value" style="flex:2;">
+                    <t t-esc="doc.prenom" />
+                  </div>
+                </div>
+
+                <div class="field" style="display: flex;margin-bottom:16px;">
+                  <div class="label" style="flex:1;font-weight: bold;">Date Naissance:</div>
+                  <div class="value" style="flex:2;">
+                    <t t-esc="doc.date_naissance" />
+                  </div>
+                </div>
+
+                <div class="field" style="display: flex;margin-bottom:16px;">
+                  <div class="label" style="flex:1;font-weight: bold;">State:</div>
+                  <div class="value" style="flex:2;">
+                    <t t-esc="doc.state" />
+                  </div>
+                </div>
+
+                <div class="field" style="display:flex;margin-bottom:16px;">
+                  <div class="label" style="flex:1;font-weight: bold;">Sexe:</div>
+                  <div class="value" style="flex:2;">
+                    <t t-esc="doc.sexe" />
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </t>
+        </t>
+      </t>
+    </template>
+
+    <record id="paperformat_emprunteur" model="report.paperformat">
+      <field name="name">custom Paper emprunteur</field>
+      <field name="default" eval="True" />
+      <field name="format">custom</field>
+      <field name="page_height">90</field>
+      <field name="page_width">90</field>
+      <field name="orientation">Landscape</field>
+      <field name="margin_top">0</field>
+      <field name="margin_bottom">0</field>
+      <field name="margin_left">2.0</field>
+      <field name="margin_right">2.0</field>
+      <field name="header_line" eval="False" />
+      <field name="header_spacing">25</field>
+      <field name="dpi">125</field>
+    </record>
+    <!-- QWeb Reports -->
+    <report
+      id="report_fiche_emprunteur"
+      model="emprunteur"
+      string="Fiche emprunteur"
+      report_type="qweb-pdf"
+      name="gestion_bibliotheque.report_emprunteur"
+    />
+
+    <record id="gestion_bibliotheque.report_fiche_emprunteur" model="ir.actions.report">
+      <field name="paperformat_id" ref="gestion_bibliotheque.paperformat_emprunteur" />
+    </record>
+    
+    
+
+  </data>
+</odoo>

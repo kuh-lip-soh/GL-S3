@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record model="ir.ui.view" id="view_produit_form">
+            <field name="name">produit.from.view</field>
+            <field name="model">produit</field>
+            <field name="arch" type="xml">
+                <form>
+                    <group>
+                        <group>
+                            <field name="nom" />
+                            <field name="reference" />
+                            <field name="quantite" />
+                            <field name="unite_mesure" />
+                            <field name="prix_kg" />
+                        </group>
+                    </group>
+                </form>
+            </field>
+        </record>
+
+        <record model="ir.ui.view" id="view_produit_tree">
+            <field name="name">produit.tree.view</field>
+            <field name="model">produit</field>
+            <field name="arch" type="xml">
+                <tree>
+                    <field name="nom" />
+                    <field name="reference" />
+                    <field name="quantite" />
+                    <field name="unite_mesure" />
+                    <field name="prix_kg" />
+                </tree>
+            </field>
+        </record>
+
+        <record model="ir.actions.act_window" id="action_produit">
+            <field name="name">Produits</field>
+            <field name="res_model">produit</field>
+            <field name="view_mode">tree,form</field>
+            <field name="view_id" ref="Gestion_Produit.view_produit_tree" />
+        </record>
+
+        <menuitem id="Gestion_Produit" name="Gestion de produit" />
+        <menuitem id="menu_produit" name="Produit" parent="gestion.produit"
+            action="action_produit" />
+    </data>
+</odoo>

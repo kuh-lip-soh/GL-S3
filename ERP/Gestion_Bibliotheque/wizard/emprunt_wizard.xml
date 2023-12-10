@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+
+<record id="view_emprunt_wizard" model="ir.ui.view">
+    <field name="name">emprunt.wizard</field>
+    <field name="model">emprunt.wizard</field>
+    <field name="arch" type="xml">
+    <form string="Ajouter Emprunt">
+    <group string="">
+    <field name="emprunteur" />
+    </group>
+    
+    <group string="">
+    <field name="ligne">
+        <tree editable="top">
+            <field name="isbn"/>
+            <field name="nbre_pages"/>
+            <field name="langue_livre"/>
+            <field name="livres"/>
+        </tree>
+    </field>
+    </group>
+
+    <group>
+    <group>
+    <field name="date_debut"/>
+    </group>
+    <group>
+    <field name="rendu"/>
+    </group>
+    <group>
+    <field name="date_fin"/>
+    </group>
+    </group>
+    <footer>
+    <button name="réinitialiser_emprunteur" string="réinitialiser_emprunteur" type="object" class="oe_highlight"/>
+    <button name="ajouter_emprunts" string="ajouter_emprunts" type="object" class="oe_highlight"/>
+    <button string="Cancel" class="oe_link" special="cancel" />
+    </footer>
+    </form>
+    </field>
+</record>
+
+
+
+<record id="emp_actions_wizard" model="ir.actions.act_window">
+<field name="name">Ajouter wizard</field>
+<field name="res_model">emprunt.wizard</field>
+<field name="view_type">form</field>
+<field name="view_mode">form</field>
+<field name="view_id" ref="view_emprunt_wizard"/>
+<field name="target">new</field>
+</record>
+
+<menuitem id="gestion_bib" name="Gestion de bibliothèque"/>
+<menuitem id="empruntWizard" name="Emprunt_wizard" parent="gestion_bib" action="emp_actions_wizard"/>
+    </data>
+ </odoo>
