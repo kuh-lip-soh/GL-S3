@@ -1,0 +1,29 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="tp3" version="4">
+  <OBJECT>
+    <ID name="tp3" mc="Standard.Package" uid="a14738a5-855c-484b-9b2d-29f708ee459d"/>
+    <PID name="TP3" mc="Standard.Project" uid="6e49c093-3c6b-4ffb-b50e-6dbb34c8f9c2"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[tp3]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Interaction" mc="Standard.Interaction" uid="e166fb8d-ebb1-44f9-88ed-8cc1c640931b"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Abonne" mc="Standard.Class" uid="f6b9546b-7f5c-45ed-a89c-70ad4aef9e9a"/>
+        <COMPID name="AgencePresse" mc="Standard.Class" uid="91dc8c85-5a24-4c78-9d77-40248cefd8aa"/>
+        <COMPID name="Article" mc="Standard.Class" uid="034b3e6d-c679-4621-9054-fb8c5a584f05"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de classe tp3" mc="Standard.ClassDiagram" uid="0741af87-17a7-4b6f-be80-574c1d2153ab"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

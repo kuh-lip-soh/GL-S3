@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="tp2" version="4">
+  <OBJECT>
+    <ID name="tp2" mc="Standard.Package" uid="2bd61468-d54b-4955-ade6-50f1b736a066"/>
+    <PID name="TP2" mc="Standard.Project" uid="54793dd6-a68f-4974-87b8-826efcb4977e"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[tp2]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedBehavior">
+        <COMPID name="Interaction" mc="Standard.Interaction" uid="d10c5882-5053-4097-9f7d-578c12745445"/>
+      </COMP>
+      <COMP relation="OwnedElement">
+        <COMPID name="Composant" mc="Standard.Class" uid="4f1ff6f6-8a34-4c44-a5ce-17b314ba1732"/>
+        <COMPID name="Répértoire" mc="Standard.Class" uid="b6c1e549-bf2f-4adf-9342-a46be6437b8c"/>
+        <COMPID name="Système de fichier" mc="Standard.Class" uid="b9d93bee-4185-41fd-9078-9742e46bfed6"/>
+        <COMPID name="Fichier" mc="Standard.Class" uid="89c403b8-dd4f-470c-8026-c34cd1a85c35"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Système de fichiers" mc="Standard.ClassDiagram" uid="996dfba6-a54f-4184-a4af-f3c3b33e75d6"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>
