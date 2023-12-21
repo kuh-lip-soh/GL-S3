@@ -1,0 +1,30 @@
+<?xml version="1.0" ?>
+<!--GENERATED FILE, PLEASE DO NOT EDIT!!!--><EXT object="tp1" version="4">
+  <OBJECT>
+    <ID name="tp1" mc="Standard.Package" uid="e88516ed-f74b-4eb3-bc66-75280fe1bd24"/>
+    <PID name="TP1" mc="Standard.Project" uid="eb1590df-e342-4223-a7ab-64dc35f2ba6f"/>
+    <ATTRIBUTES>
+      <ATT name="IsInstantiable">false</ATT>
+      <ATT name="IsAbstract">false</ATT>
+      <ATT name="IsLeaf">false</ATT>
+      <ATT name="IsRoot">false</ATT>
+      <ATT name="Visibility">Public</ATT>
+      <ATT name="Name"><![CDATA[tp1]]></ATT>
+      <ATT name="status">1970354901745664</ATT>
+    </ATTRIBUTES>
+    <DEPENDENCIES>
+      <COMP relation="OwnedElement">
+        <COMPID name="Vehicule" mc="Standard.Class" uid="a757b9df-4dae-48cc-8819-fe0941ba9a6c"/>
+        <COMPID name="Voiture" mc="Standard.Class" uid="792a663e-1715-456c-8d12-ac351ef0a7df"/>
+        <COMPID name="Bus" mc="Standard.Class" uid="5c8533d3-7f0e-40a0-8d80-271a06559a74"/>
+        <COMPID name="Bicyclette" mc="Standard.Class" uid="958f9d6d-2629-4afd-898a-e6b5bd474a24"/>
+        <COMPID name="UsineVoiture" mc="Standard.Class" uid="7ce71279-598f-4f93-a1d8-28a342f8586b"/>
+        <COMPID name="UsineBicyclette" mc="Standard.Class" uid="2eb3c32b-698d-463f-99cb-c4b795e56dc8"/>
+        <COMPID name="UsineBus" mc="Standard.Class" uid="61212001-2d05-4bd4-bb55-692a6bc5ff7c"/>
+      </COMP>
+      <COMP relation="Product">
+        <COMPID name="Diagramme de classe tp1" mc="Standard.ClassDiagram" uid="6e79e22e-a266-4949-8ef8-98d962891823"/>
+      </COMP>
+    </DEPENDENCIES>
+  </OBJECT>
+</EXT>

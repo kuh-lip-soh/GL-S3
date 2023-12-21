@@ -19,11 +19,16 @@
       <COMP relation="OwnedElement">
         <COMPID name="Composant" mc="Standard.Class" uid="4f1ff6f6-8a34-4c44-a5ce-17b314ba1732"/>
         <COMPID name="Répértoire" mc="Standard.Class" uid="b6c1e549-bf2f-4adf-9342-a46be6437b8c"/>
-        <COMPID name="Système de fichier" mc="Standard.Class" uid="b9d93bee-4185-41fd-9078-9742e46bfed6"/>
         <COMPID name="Fichier" mc="Standard.Class" uid="89c403b8-dd4f-470c-8026-c34cd1a85c35"/>
+        <COMPID name="Observer" mc="Standard.Class" uid="d9073235-c9aa-4d83-be8b-bebe2ea3c036"/>
+        <COMPID name="NombreObversable" mc="Standard.Class" uid="0795de45-28fa-4518-98f1-f5933d90ea59"/>
+        <COMPID name="ObserverOctal" mc="Standard.Class" uid="e4741660-4dfc-4cd9-b9f3-5e5f9a7674bf"/>
+        <COMPID name="ObserverBinaire" mc="Standard.Class" uid="e7c2b82a-33d0-4c46-918b-a9a217d8c8f9"/>
+        <COMPID name="ObserverHex" mc="Standard.Class" uid="fb9392f3-14e3-405a-afde-ba58c8a250e6"/>
       </COMP>
       <COMP relation="Product">
         <COMPID name="Système de fichiers" mc="Standard.ClassDiagram" uid="996dfba6-a54f-4184-a4af-f3c3b33e75d6"/>
+        <COMPID name="Observateur" mc="Standard.ClassDiagram" uid="0e566d2d-cc34-4ca6-940e-a2f691561fb3"/>
       </COMP>
     </DEPENDENCIES>
   </OBJECT>

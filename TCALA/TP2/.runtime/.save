@@ -1,7 +1,8 @@
-#Tue Dec 05 12:53:52 GMT+01:00 2023
+#Tue Dec 19 13:25:11 GMT+01:00 2023
 org.modelio.app.module.propertytab.GPart\ [id\='JavaDesigner',\ version\='5.3.00',\ type\='MODULE',\ definitionScope\='LOCAL',\ state\='MOUNTED']\ runtime\ module_.org.modelio.development.perspective.parentId=app.ui.ext_com.partstack.bottom
 org.modelio.app.module.propertytab.GPart\ [id\='JavaDesigner',\ version\='5.3.00',\ type\='MODULE',\ definitionScope\='LOCAL',\ state\='MOUNTED']\ runtime\ module_.org.modelio.app.ui.model.perspective.parentId=org.modelio.app.bottom.parts
 org.modelio.app.module.propertytab.GPart\ [id\='JavaDesigner',\ version\='5.3.00',\ type\='MODULE',\ definitionScope\='LOCAL',\ state\='MOUNTED']\ runtime\ module_.org.modelio.full.perspective.parentId=app.ui.ext_com.partstack.bottom
 org.modelio.app.diagram.editor.OpenedDiagrams0='Syst\u00E8me de fichiers' {996dfba6-a54f-4184-a4af-f3c3b33e75d6} Standard.ClassDiagram
-org.modelio.app.diagram.editor.OpenedDiagrams1='\u00C9ffacement' {4cce0c77-bb91-4f2f-b667-bad3a9322d83} Standard.SequenceDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams1='Effacement' {4cce0c77-bb91-4f2f-b667-bad3a9322d83} Standard.SequenceDiagram
+org.modelio.app.diagram.editor.OpenedDiagrams2='Observateur' {0e566d2d-cc34-4ca6-940e-a2f691561fb3} Standard.ClassDiagram
 org.modelio.app.module.propertytab.GPart\ [id\='JavaDesigner',\ version\='5.3.00',\ type\='MODULE',\ definitionScope\='LOCAL',\ state\='MOUNTED']\ runtime\ module_.org.modelio.diagram.perspective.parentId=app.ui.ext_com.partstack.right

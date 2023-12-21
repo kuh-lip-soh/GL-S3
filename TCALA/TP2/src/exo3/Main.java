@@ -1,28 +1,31 @@
 package exo3;
 
-import java.util.Scanner;
-
-
-
 public class Main {
-    public  static void main(String[] args) {
-        System.out.println("Entrez la valeur de la chaine : ");
-        Scanner scn = new Scanner(System.in);
-        String ch = scn.next();
-        Validateur v=new Validateur(ch);
-        if(ch.endsWith("@gmail.com")|| ch.endsWith("@yahoo.com") || ch.endsWith("@live.fr")){
-            v.setStrategie(new Mail());
+    public static void main(String[] args) {
+        Validator validator = new Validator();
 
-            System.out.println("Votre chaine est un mail");
-        }
-        else {
-            if(ch.matches("[+-]?\\d*(\\.\\d+)?")) {
-                entier e1=new entier();
-             v.setStrategie(e1);
-             e1.entier=Integer.getInteger(ch);
-                System.out.println("Votre chaine est un entier");
-            }
-        }
+        // Test and validate integer
+        ValidationStrategy integerStrategy = new IntegerValidationStrategy();
+        validator.setStrategy(integerStrategy);
 
-}
+        String integer1 = "aaa";
+        boolean validationRes = validator.validate(integer1);
+        System.out.println("Input '" + integer1 + "' is a valid integer? " + validationRes);
+
+        String integer2 = "22";
+        validationRes = validator.validate(integer2);
+        System.out.println("Input'" + integer2 + "' is a valid integer? " + validationRes);
+
+        // Test and validate Email
+        ValidationStrategy emailStrategy = new EmailValidationStrategy();
+        validator.setStrategy(emailStrategy);
+
+        String email1 = "testexample.com";
+        validationRes = validator.validate(email1);
+        System.out.println("Input '" + email1 + "' is a valid Email? " + validationRes);
+
+        String email2 = "testexample@domain.com";
+        validationRes = validator.validate(email2);
+        System.out.println("Input '" + email2 + "' is a valid Email? " + validationRes);
+    }
 }
