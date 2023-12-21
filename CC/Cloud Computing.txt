@@ -78,3 +78,23 @@ sudo apt update && sudo apt upgrade -y
 
 -----------TP3--------------
 
+setxkbmap fr
+sudo dpkg-reconfigure keyboard-configuration
+
+-----------TP4---------------
+
+2)	a- sudo apt udapte
+	   sudo apt install apache2
+
+	e- on voit la page index.html de base de Apache
+
+	f- sudo mv /home/user/Desktop/html/ /var/www/
+	   sudo mv /home/user/Desktop/sites-available/* /etc/apache2/sites-available
+	   sudo chown -R www-data:www-data /var/www/html/site.com 
+	   sudo a2ensite site.com
+	   sudo service apache2 reload
+	   sudo service apache2 restart
+
+	h- apt-get install php libapache2-mod-php
+
+
