@@ -1,0 +1,100 @@
+package web_banque;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.Enumeration;
+
+import javax.ejb.EJB;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
+import Exceptions.ErrorException;
+import Exceptions.ValidationInput;
+import Exceptions.Valider;
+import designPatterns.*;
+import entity.Banquier;
+import entity.Client;
+import entity.Compte;
+import entity.Compte_Client;
+import sessions.BanquierLocal;
+import sessions.ClientLocal;
+import sessions.CompteClientSessionBeanLocal;
+import sessions.CompteSessionBeanLocal;
+
+/**
+ * Servlet implementation class AssocierCompteBnq
+ */
+@WebServlet("/AssocierCompteBnq")
+public class AssocierCompteBnq extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+
+	/**
+	 * @see HttpServlet#HttpServlet()
+	 */
+	@EJB
+	private BanquierLocal bl;
+	@EJB
+	private ClientLocal client_session;
+	@EJB
+	private CompteSessionBeanLocal compte_session;
+	@EJB
+
+	private CompteClientSessionBeanLocal compte_client_session;
+	public HttpSession session;
+	AbstractFactoryCompte afc = new AbstractFactoryCompte();
+
+	public AssocierCompteBnq() {
+		super();
+
+		// TODO Auto-generated constructor stub
+	}
+
+	/**
+	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse
+	 *      response)
+	 */
+	protected void doGet(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+		// TODO Auto-generated method stub
+		session = request.getSession(false);
+
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+		try {
+			request.setAttribute("clients", client_session.listerClient());
+		} catch (ErrorException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			request.setAttribute("comptes", compte_session.listerCompte());
+		} catch (ErrorException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		request.setAttribute("banquier", session.getAttribute("bnq"));
+		request.getRequestDispatcher("/AssocierCompteBnq.jsp").forward(request, response);
+	}
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response)
+			throws ServletException, IOException {
+
+		session = request.getSession(true);
+		Banquier bnq = (Banquier) session.getAttribute("bnq");
+
+		Enumeration<String> parameterNames = request.getParameterNames();
+		while (parameterNames.hasMoreElements()) {
+			String paramName = parameterNames.nextElement();
+			String[] paramValues = request.getParameterValues(paramName);
+
+			System.out.println("Parameter: " + paramName);
+			for (String paramValue : paramValues) {
+				System.out.println("  Value: " + paramValue);
+			}
+		}
+
+	}
+}

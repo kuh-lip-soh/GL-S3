@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\Users\Zakaria\Desktop\banqueapps\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1327353814.index
+1851438272.index
+1622229775.index
+145954001.index
+3734111382.index
+2846479595.index
+2587870841.index

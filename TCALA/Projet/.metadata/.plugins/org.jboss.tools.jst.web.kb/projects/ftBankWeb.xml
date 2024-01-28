@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kb-project>
+ <depends-on-projects>
+  <project name="FstbankEJB"/>
+ </depends-on-projects>
+ <used-by-projects/>
+ <paths>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/ws/rs/api/main/jboss-jaxrs-api_2.0_spec-1.0.0.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/org/jboss/resteasy/resteasy-jaxb-provider/main/resteasy-jaxb-provider-3.0.24.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/org/jboss/resteasy/resteasy-jaxrs/main/resteasy-jaxrs-3.0.24.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/enterprise/api/main/cdi-api-1.2.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/mail/api/main/javax.mail-1.5.6.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/management/j2ee/api/main/jboss-j2eemgmt-api_1.1_spec-1.0.1.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/el/api/main/jboss-el-api_3.0_spec-1.0.9.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/jws/api/main/jsr181-api-1.0-MR1.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/org/picketbox/main/picketbox-commons-1.0.0.final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/annotation/api/main/jboss-annotations-api_1.2_spec-1.0.0.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/org/jboss/dmr/main/jboss-dmr-1.4.1.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/org/wildfly/common/main/wildfly-common-1.2.0.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/websocket/api/main/jboss-websocket-api_1.1_spec-1.1.1.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/org/jboss/as/controller-client/main/wildfly-controller-client-3.0.8.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/validation/api/main/validation-api-1.1.0.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/security/auth/message/api/main/jboss-jaspi-api_1.1_spec-1.0.0.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/resource/api/main/jboss-connector-api_1.7_spec-1.0.0.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/servlet/api/main/jboss-servlet-api_3.1_spec-1.0.0.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/org/wildfly/security/elytron-private/main/wildfly-elytron-1.1.6.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/xml/bind/api/main/jboss-jaxb-api_2.2_spec-1.0.4.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/xml/ws/api/main/jboss-jaxws-api_2.2_spec-2.0.4.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/security/jacc/api/main/jboss-jacc-api_1.5_spec-1.0.1.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/org/picketbox/main/picketbox-infinispan-5.0.2.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/org/jboss/logging/main/jboss-logging-3.3.1.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/batch/api/main/jboss-batch-api_1.0_spec-1.0.0.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/faces/api/main/jboss-jsf-api_2.2_spec-2.2.13.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/servlet/jstl/api/main/taglibs-standard-compat-1.2.6-RC1.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-compat-1.2.6-RC1.jar/meta-inf/c-1_0.tld" project="FstbankEJB"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-compat-1.2.6-RC1.jar/meta-inf/fmt-1_0.tld" project="FstbankEJB"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-compat-1.2.6-RC1.jar/meta-inf/sql-1_0.tld" project="FstbankEJB"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-compat-1.2.6-RC1.jar/meta-inf/x-1_0.tld" project="FstbankEJB"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/enterprise/concurrent/api/main/jboss-concurrency-api_1.0_spec-1.0.0.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/org/jboss/resteasy/resteasy-jaxrs/main/resteasy-client-3.0.24.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/org/jboss/ejb3/main/jboss-ejb3-ext-api-2.2.0.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/orb/api/main/openjdk-orb-8.0.8.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/org/picketbox/main/picketbox-5.0.2.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/interceptor/api/main/jboss-interceptors-api_1.2_spec-1.0.0.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/servlet/jstl/api/main/taglibs-standard-impl-1.2.6-RC1.jar">
+   <libraries>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/c-1_0-rt.tld" project="FstbankEJB"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/c-1_1.tld" project="FstbankEJB"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/c.tld" project="FstbankEJB"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/fmt-1_0-rt.tld" project="FstbankEJB"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/fmt.tld" project="FstbankEJB"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/fn.tld" project="FstbankEJB"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/permittedtaglibs.tld" project="FstbankEJB"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/scriptfree.tld" project="FstbankEJB"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/sql-1_0-rt.tld" project="FstbankEJB"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/sql.tld" project="FstbankEJB"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/x-1_0-rt.tld" project="FstbankEJB"/>
+    </library>
+    <library class="tld">
+     <id class="model-object"
+      path="FileSystems/lib-taglibs-standard-impl-1.2.6-RC1.jar/meta-inf/x.tld" project="FstbankEJB"/>
+    </library>
+   </libraries>
+  </path>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/jms/api/main/jboss-jms-api_2.0_spec-1.0.1.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/org/hibernate/validator/main/hibernate-validator-5.3.5.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/activation/api/main/activation-1.1.1.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/xml/rpc/api/main/jboss-jaxrpc-api_1.1_spec-1.0.1.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/org/jboss/resteasy/resteasy-multipart-provider/main/resteasy-multipart-provider-3.0.24.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/ejb/api/main/jboss-ejb-api_3.2_spec-1.0.0.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/persistence/api/main/hibernate-jpa-2.1-api-1.0.0.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/servlet/jstl/api/main/taglibs-standard-spec-1.2.6-RC1.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/transaction/api/main/jboss-transaction-api_1.2_spec-1.0.1.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/xml/soap/api/main/jboss-saaj-api_1.3_spec-1.0.4.Final.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/wsdl4j/api/main/wsdl4j-1.6.3.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/inject/api/main/javax.inject-1.jar"/>
+  <path value="C:/Users/Zakaria/Desktop/banqueapps/WildFly/wildfly-11.0.0.Final/modules/system/layers/base/javax/servlet/jsp/api/main/jboss-jsp-api_2.3_spec-1.0.1.Final.jar"/>
+ </paths>
+ <validation>
+  <core validator-id="jboss.cdi.core"/>
+  <el>
+   <linked-el length="23" name="%0" offset="4364" path="%1"/>
+   <linked-el length="23" name="%0" offset="2753" path="%2"/>
+   <linked-el length="20" name="%0" offset="2858" path="%3"/>
+   <linked-el length="23" name="%0" offset="2879" path="%3"/>
+   <linked-el length="20" name="%0" offset="4343" path="%1"/>
+   <linked-el length="20" name="%0" offset="2732" path="%2"/>
+   <linked-el length="11" name="%4" offset="15771" path="%1"/>
+   <linked-el length="11" name="%4" offset="10193" path="%2"/>
+   <linked-el length="24" name="%5" offset="2992" path="%6"/>
+   <linked-el length="27" name="%5" offset="3084" path="%7"/>
+   <linked-el length="54" name="%5" offset="6332" path="%7"/>
+   <linked-el length="47" name="%5" offset="5805" path="%7"/>
+   <linked-el length="57" name="%5" offset="6897" path="%7"/>
+   <linked-el length="24" name="%5" offset="3059" path="%7"/>
+   <linked-el length="27" name="%5" offset="3036" path="%6"/>
+   <linked-el length="13" name="%8" offset="10638" path="%2"/>
+   <linked-el length="13" name="%8" offset="16392" path="%1"/>
+   <linked-el length="10" name="%9" offset="6923" path="%1"/>
+   <linked-el length="13" name="%10" offset="7355" path="%7"/>
+   <linked-el length="13" name="%10" offset="5929" path="%3"/>
+   <linked-el length="13" name="%10" offset="8500" path="%1"/>
+   <linked-el length="13" name="%10" offset="6090" path="%6"/>
+   <linked-el length="17" name="%11" offset="3201" path="%12"/>
+   <linked-el length="18" name="%13" offset="10750" path="%2"/>
+   <linked-el length="21" name="%13" offset="10769" path="%2"/>
+   <linked-el length="43" name="%13" offset="10706" path="%2"/>
+   <linked-el length="77" name="%13" offset="16501" path="%1"/>
+   <linked-el length="18" name="%13" offset="16615" path="%1"/>
+   <linked-el length="21" name="%13" offset="16634" path="%1"/>
+   <linked-el length="26" name="%14" offset="6405" path="%3"/>
+   <linked-el length="29" name="%14" offset="6628" path="%6"/>
+   <linked-el length="26" name="%14" offset="6566" path="%6"/>
+   <linked-el length="29" name="%14" offset="6467" path="%3"/>
+   <linked-el length="25" name="%15" offset="9856" path="%6"/>
+   <linked-el length="33" name="%15" offset="10310" path="%3"/>
+   <linked-el length="22" name="%15" offset="10062" path="%6"/>
+   <linked-el length="36" name="%15" offset="10395" path="%3"/>
+   <linked-el length="25" name="%15" offset="10104" path="%3"/>
+   <linked-el length="33" name="%15" offset="10471" path="%6"/>
+   <linked-el length="25" name="%15" offset="9695" path="%3"/>
+   <linked-el length="22" name="%15" offset="9901" path="%3"/>
+   <linked-el length="36" name="%15" offset="10556" path="%6"/>
+   <linked-el length="25" name="%15" offset="10265" path="%6"/>
+   <linked-el length="31" name="%16" offset="3198" path="%17"/>
+   <linked-el length="29" name="%16" offset="3127" path="%17"/>
+   <linked-el length="30" name="%18" offset="7200" path="%6"/>
+   <linked-el length="96" name="%18" offset="7684" path="%6"/>
+   <linked-el length="22" name="%18" offset="6744" path="%3"/>
+   <linked-el length="29" name="%18" offset="6073" path="%3"/>
+   <linked-el length="30" name="%18" offset="7039" path="%3"/>
+   <linked-el length="96" name="%18" offset="7523" path="%3"/>
+   <linked-el length="29" name="%18" offset="6234" path="%6"/>
+   <linked-el length="22" name="%18" offset="6905" path="%6"/>
+   <linked-el length="63" name="%18" offset="6383" path="%6"/>
+   <linked-el length="29" name="%18" offset="6887" path="%3"/>
+   <linked-el length="42" name="%18" offset="6829" path="%6"/>
+   <linked-el length="85" name="%18" offset="9416" path="%3"/>
+   <linked-el length="77" name="%18" offset="8609" path="%1"/>
+   <linked-el length="52" name="%18" offset="7537" path="%6"/>
+   <linked-el length="29" name="%18" offset="7048" path="%6"/>
+   <linked-el length="63" name="%18" offset="6222" path="%3"/>
+   <linked-el length="19" name="%18" offset="8723" path="%1"/>
+   <linked-el length="42" name="%18" offset="6668" path="%3"/>
+   <linked-el length="31" name="%18" offset="7427" path="%7"/>
+   <linked-el length="29" name="%18" offset="7493" path="%7"/>
+   <linked-el length="52" name="%18" offset="7376" path="%3"/>
+   <linked-el length="85" name="%18" offset="9577" path="%6"/>
+  </el>
+ </validation>
+ <aliases>
+  <alias path="errorEx1" value="%4"/>
+  <alias path="clients" value="%8"/>
+  <alias path="errorEx" value="%9"/>
+  <alias path="/ftBankWeb/WebContent/compteBanquier.jsp" value="%3"/>
+  <alias path="/ftBankWeb/WebContent/login_client.jsp" value="%17"/>
+  <alias path="cm" value="%14"/>
+  <alias path="/ftBankWeb/WebContent/BanquierLogin.jsp" value="%12"/>
+  <alias path="banquier" value="%0"/>
+  <alias path="client_login" value="%5"/>
+  <alias path="/ftBankWeb/WebContent/detail.jsp" value="%2"/>
+  <alias path="/ftBankWeb/WebContent/AssocierCompteBnq.jsp" value="%1"/>
+  <alias path="/ftBankWeb/WebContent/list_comptes.jsp" value="%6"/>
+  <alias path="comptes" value="%10"/>
+  <alias path="error_banquier" value="%11"/>
+  <alias path="/ftBankWeb/WebContent/Operation.jsp" value="%7"/>
+  <alias path="client" value="%13"/>
+  <alias path="operation" value="%15"/>
+  <alias path="error_client_login" value="%16"/>
+  <alias path="compte" value="%18"/>
+ </aliases>
+ <includes/>
+ <uris>
+  <uri value="http://java.sun.com/jsp/jstl/core">
+   <prefix>c</prefix>
+  </uri>
+ </uris>
+</kb-project>

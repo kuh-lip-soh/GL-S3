@@ -1,0 +1,25 @@
+INDEX VERSION 1.134
+C:\Users\Zakaria\Desktop\banqueapps\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4171614548.index
+\ftBankWeb\src
+C:\Users\Zakaria\Desktop\banqueapps\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1047033705.index
+\FstBankWeb\src
+C:\Users\Zakaria\Desktop\banqueapps\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2846479595.index
+\ftBankWeb\src
+C:\Users\Zakaria\Desktop\banqueapps\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2269191643.index
+\FstBankWeb\src
+C:\Users\Zakaria\Desktop\banqueapps\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3435451312.index
+\fstBankWe\src
+C:\Users\Zakaria\Desktop\banqueapps\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2331783878.index
+\ftBankWe\src
+C:\Users\Zakaria\Desktop\banqueapps\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3567659516.index
+\ftBankWe\src
+C:\Users\Zakaria\Desktop\banqueapps\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1962322536.index
+\ftBankWebg\src
+C:\Users\Zakaria\Desktop\banqueapps\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\504261844.index
+\ftBankWebg\src
+C:\Users\Zakaria\Desktop\banqueapps\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\148362441.index
+\fstBankWeb\src
+C:\Users\Zakaria\Desktop\banqueapps\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\277428227.index
+\fstBankWeb\src
+C:\Users\Zakaria\Desktop\banqueapps\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2838032492.index
+\fstBankWe\src

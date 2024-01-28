@@ -1,0 +1,17 @@
+JRE_LIB=C\:/Program Files/Eclipse Adoptium/jdk-21.0.2.13-hotspot/lib/jrt-fs.jar
+JRE_SRC=C\:/Program Files/Eclipse Adoptium/jdk-21.0.2.13-hotspot/lib/src.zip
+eclipse.preferences.version=1
+org.eclipse.jdt.core.classpathVariable.ECLIPSE_HOME=C\:/Users/Zakaria/eclipse/jee-2023-12/eclipse/
+org.eclipse.jdt.core.classpathVariable.JRE_LIB=C\:/Program Files/Eclipse Adoptium/jdk-8.0.402.6-hotspot/jre/lib/rt.jar
+org.eclipse.jdt.core.classpathVariable.JRE_SRC=C\:/Program Files/Eclipse Adoptium/jdk-8.0.402.6-hotspot/src.zip
+org.eclipse.jdt.core.classpathVariable.JRE_SRCROOT=
+org.eclipse.jdt.core.classpathVariable.JUNIT_HOME=C\:/Users/Zakaria/.p2/pool/plugins/org.junit_4.13.2.v20230809-1000.jar
+org.eclipse.jdt.core.classpathVariable.M2_REPO=C\:/Users/Zakaria/.m2/repository
+org.eclipse.jdt.core.codeComplete.visibilityCheck=enabled
+org.eclipse.jdt.core.compiler.codegen.inlineJsrBytecode=enabled
+org.eclipse.jdt.core.compiler.codegen.targetPlatform=17
+org.eclipse.jdt.core.compiler.compliance=17
+org.eclipse.jdt.core.compiler.problem.assertIdentifier=error
+org.eclipse.jdt.core.compiler.problem.enumIdentifier=error
+org.eclipse.jdt.core.compiler.release=enabled
+org.eclipse.jdt.core.compiler.source=17
