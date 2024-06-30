@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="medicament_form_view" model="ir.ui.view">
+            <field name="name">hamadi_mohammed.medicament.form</field>
+            <field name="model">hamadi_mohammed.medicament</field>
+            <field name="arch" type="xml">
+                <form string="medicament">
+                    <sheet>
+                        <group>
+                            <field name="libelle"/>
+                            <field name="description"/>
+                            <field name="consultations_ids"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="medicament_tree_view" model="ir.ui.view">
+            <field name="name">hamadi_mohammed.medicament.tree</field>
+            <field name="model">hamadi_mohammed.medicament</field>
+            <field name="arch" type="xml">
+                <tree string="medicament">
+                    <field name="libelle"/>
+                    <field name="description"/>
+                </tree>
+            </field>
+        </record>
+
+        <record id="medicament_act_window" model="ir.actions.act_window">
+            <field name="name">medicament</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hamadi_mohammed.medicament</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    y -as t'il aucun medicament cliquer ici pour ajouter un nouveau medicament
+                </p>
+            </field>
+        </record>
+
+        <menuitem name="medicament"
+                id="medicament_menu"
+                parent="gestion_medical_menu"
+                action="medicament_act_window"
+        />
+
+    </data>
+</odoo>

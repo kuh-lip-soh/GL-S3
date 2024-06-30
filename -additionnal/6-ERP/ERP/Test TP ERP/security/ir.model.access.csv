@@ -1,0 +1,8 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+medecin_acces_consultation,consultation,hamadi_mohammed.model_hamadi_mohammed_consultation,hamadi_mohammed.group_medecin,1,1,1,1
+medecin_acces_medicament,medicament,hamadi_mohammed.model_hamadi_mohammed_medicament,hamadi_mohammed.group_medecin,1,1,1,1
+medecin_acces_patient,patient,hamadi_mohammed.model_hamadi_mohammed_patient,hamadi_mohammed.group_medecin,1,1,1,1
+
+secretaire_acces_consultations,consultation,hamadi_mohammed.model_hamadi_mohammed_consultation,hamadi_mohammed.group_secretaire,1,0,0,0
+secretaire_acces_medicament,medicament,hamadi_mohammed.model_hamadi_mohammed_medicament,hamadi_mohammed.group_secretaire,1,1,1,0
+secretaire_acces_patient,patient,hamadi_mohammed.model_hamadi_mohammed_patient,hamadi_mohammed.group_secretaire,1,1,1,0

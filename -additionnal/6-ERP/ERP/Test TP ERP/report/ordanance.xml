@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+	<data>
+		<record id="paper_format_attestation" model="report.paperformat">
+			<field name="name">Imprimer</field>
+			<field name="format">A4</field>
+			<field name="orientation">Portrait</field>
+			<field name="margin_top">15</field>
+			<field name="margin_buttom">5</field>
+			<field name="margin_left">3</field>
+			<field name="margin_right">3</field>
+		</record>
+		<report
+			id="report_ordanance"
+			string="Imprimer l'ordanance"
+			model="hamadi_mohammed.consultation"
+			report_type="qweb-pdf"
+			name="hamadi_mohammed.fiche_ordanance"
+			file="Ordanance"
+			paperformat="hamadi_mohammed.paper_format_attestation"
+		/>
+		<template id="fiche_ordanance">
+            <t t-foreach="docs" t-as="doc">
+                <t t-call="web.external_layout">
+                    <div class="page">
+                        <div name="header">
+                            <center>
+                                <h1 style="color:green;">Hopital de tlemcen <br />CHU demerdji</h1>
+                            </center>
+                            <center>
+                                <h2 style="background-color:powderblue;">Ordanance</h2>
+                            </center>
+                        </div>
+                        <center>
+                            <h2>
+                                <strong>Information du patient</strong>
+                            </h2>
+                        </center>
+                        <Table>
+                            <tr>
+                                <td>Nom et prenom:</td>
+                                <td>
+                                    <span t-field="doc.patient_id.nom"></span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    Matricule :
+                                </td>
+                                <td>
+                                    <span t-field="doc.patient_id.matricule"></span>
+                                </td>
+                            </tr>
+                        </Table>
+                        <h4>Medecin : <span t-field="doc.medecin"></span></h4>
+                        <h4>Date : <span t-field="doc.date"></span></h4>
+                        <h4>Poids : <span t-field="doc.poids"></span></h4>
+                        <h4>Taille : <span t-field="doc.taille"></span></h4>
+                        <h4>IMC : <span t-field="doc.imc"></span></h4>
+                        <h4>IMC : <span t-field="doc.motif"></span></h4>
+                        <center>
+                            <h2><b>Consultation</b></h2>
+                        </center>
+
+
+
+                        <h4>
+
+                            <Table>
+                                <tr t-foreach="doc.medicament_ids" t-as="line">
+                                    <td>
+                                        <span t-field="line.libelle"/>
+                                    </td>
+                                    <td class="text-center">
+                                        <span t-field="line.description"/>
+                                    </td>
+                                </tr>
+
+                            </Table>
+                        </h4>
+                    </div>
+                </t>
+            </t>
+        </template>
+	</data>
+
+</odoo>

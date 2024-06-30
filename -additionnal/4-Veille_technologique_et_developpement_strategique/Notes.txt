@@ -1,0 +1,37 @@
+Veille technologique 3 brixi nigassa 
+(Notion de logiciel libre/opensource)
+   - unix est est in noyau de system D'exploitation et il est non Libre(privateur)
+   - gnu est un systeme d'exploitation  Qui utilise un clone de unix mais Gnu est un logiciel libre(non Privateur)
+   - Richard Stallman (RMS), est Le fondateur du projet gnu
+   - hacker a lorigine n'est pas pirate,mais c d gens qui poussent le Systeme a ses limites pour les faire Faire ce qu'il est pas prevu de faire
+   (Donc le vrai sense du hacker C klkun qui utilise les limites D'un logiciel pour faire du.bien)
+
+   - cracker sont les malfaiteurs et non Pas hackers
+   - free veut pas dire gratuit mais veut Dire que le code est partageable Gratuitement ou avec largent ca dpn
+   - fsf : retour de la culture hacker
+   - gnu : acronyme recursif
+   - gcc: gnu c compiler => gnu compiler Collection
+   - the hurd, SE gnu mais avec noyau Hurd
+   - il ya un probleme avec logiciels libres C le faite que quelqun achete le code Puis il le prive chez lui il partage pas
+   - linus trovalds: avait une idée de Travailler le noyau de gnu donc il a Utilise le noyau GPL parceque c Un noyau libre, et il la developpé et Il a nommé le systeme Linux. La richard Stallman etait pas daccord de la Nommation de linux il aurait preferé  Qu'il le nomme gnu-linux paske l'autre A utilisé gnu il a juste modifier le noyau Et il a pris tous le succes.
+   - MacOs etait logiciel libre mais D'autres l'ont utilisé pour des produits Privateurs(non libre)
+   - le vrai gnu c'est le.gnu avec le noyau Hurd, c a dire sans utiliser le noyau unix
+   - freesoftware ne veut pas dire Forcement gratuit
+   - opensource( par Eric Raymond) c'est juste un maquiage Pour changer le mot libre
+  En opensource
+   - fsf(libre) et opensource sont des freres ennemies, freres parcque font la Meme choses et ennemies paske Stallman voulait insisté sur le mot Libre (paske c'est tres ethique) et Opensource il insistait sur le coté Technique du developpement
+   - shareware c'est des logiciels Qui peuvent etre libre ou non et ils Sont payables mais l'obligation de Payer est morale, c'est a dire  Cadepend de notre contience si Le logiciel nous plait on doit payer  Mais on peut lutiliser sans payer Quand meme
+
+   - logiciels libres sont plusieurs types: Permissive, copyleft....
+   - copyleft (aussi appelés GPL) ce sont Des logiciels libres mais si klkun Modifie le code il doit rester avec la Licence libre on doit pas le priver
+   - logiciels permissive ( aussi appellés non copyleftés) on peut avoir des derives Privateurs ( si d'autres personnes ameliorent le logiciel ils peuvent mettre une licence non libre)
+ voir diapo pour les Autres types de logiciel libre
+
+  - categories de logiciels: 
+     1) logiciels privés: logiciel developpé Par l'informaticien de l'entreprise Et il est utilisé en interne Dans  l'entreprise ( remarque: logiciels Privés sont libre parceque ils Respectent les 4 condition de liberté)
+     2) logiciels commerciaux :
+     Peuvent etre libre ou non mais on doit Payer
+
+   - quelques licences : (voir diapo)
+
+   Diapo sur : Nh2blog.wordpress.com

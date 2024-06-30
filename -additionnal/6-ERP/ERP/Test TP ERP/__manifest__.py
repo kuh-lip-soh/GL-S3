@@ -1,0 +1,22 @@
+{
+    'name': 'Hamadi mohammed',
+    'version': '1.0',
+    'description': "test tp",
+    'author': 'Hamadi Mohammed',
+    'depends': [],
+    'category' : 'Education',
+    'sequence':2,
+    'website':'http://wwww.master-gl.com',
+    'data': [
+        "views/patient.xml",
+        "views/medicament.xml",
+        "views/consultation.xml",
+        "report/ordanance.xml",
+        "security/groupes.xml",
+        "security/ir.model.access.csv",
+    ],
+    'demo': [],
+    'installable': True,
+    'auto_install': False,
+    'application':True,
+}

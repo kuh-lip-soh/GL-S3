@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data>
+
+        <record id="consultation_form_view" model="ir.ui.view">
+            <field name="name">hamadi_mohammed.consultation.form</field>
+            <field name="model">hamadi_mohammed.consultation</field>
+            <field name="arch" type="xml">
+                <form string="consultation">
+
+                    <sheet>
+                        <group>
+                            <field name="date"/>
+                            <field name="medecin"/>
+                            <field name="poids"/>
+                            <field name="taille"/>
+                            <field name="motif"/>
+                            <field name="imc"/>
+                            <field name="patient_id"/>
+                            <field name="medicament_ids"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="consultation_tree_view" model="ir.ui.view">
+            <field name="name">hamadi_mohammed.consultation.tree</field>
+            <field name="model">hamadi_mohammed.consultation</field>
+            <field name="arch" type="xml">
+                <tree string="consultation">
+                    <field name="date"/>
+                    <field name="medecin"/>
+                    <field name="poids"/>
+                    <field name="taille"/>
+                    <field name="motif"/>
+                    <field name="imc"/>
+                    <field name="patient_id"/>
+
+                </tree>
+            </field>
+        </record>
+
+        <record id="consultation_act_window" model="ir.actions.act_window">
+            <field name="name">consultation</field>
+            <field name="type">ir.actions.act_window</field>
+            <field name="res_model">hamadi_mohammed.consultation</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <p class="oe_view_nocontent_create">
+                    There is no examples click here to add new consultation.
+                </p>
+            </field>
+        </record>
+
+        <menuitem name="consultation"
+                id="consultation_menu"
+                parent="gestion_medical_menu"
+                action="consultation_act_window"
+        />
+
+    </data>
+</odoo>
